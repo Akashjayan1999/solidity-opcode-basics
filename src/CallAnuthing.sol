@@ -34,7 +34,8 @@ contract CallAnything {
 
     function getDataToCallTransfer(address someAddress, uint256 amount) public pure returns (bytes memory) {
         return abi.encodeWithSelector(getSelectorOne(), someAddress, amount);
-    }https://www.hackerearth.com/practice/interviews/code-explained/?utm_source=new_practice
+    }
+    //https://www.hackerearth.com/practice/interviews/code-explained/?utm_source=new_practice
 
     // So... How can we use the selector to call our transfer function now then?
     function callTransferFunctionDirectly(address someAddress, uint256 amount) public returns (bytes4, bool) {
